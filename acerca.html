@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acerca de - Transformaciones AF</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="fontsobrede.png" alt="Sobre esta página" style="max-width: 90%; height: auto; margin: 1rem auto; display: block;" />
+  </header>
+
+  
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="galeria.html">Explorador</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="acerca.html">Acerca de</a>
+</nav>
+
+
+  <main>
+    <article>
+      <h2>¿Qué es este sitio?</h2>
+      <p>Este sitio web es un proyecto académico enfocado en el uso de tecnologías Front-End para presentar contenido temático de forma creativa.</p>
+      <p>El tema elegido es <strong>Dragon Ball AF</strong> y las transformaciones creadas por fans, con un enfoque especial en el personaje Goku y su evolución más extrema: el Super Saiyajin Fase 10.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Transformaciones Dragon Ball AF - Proyecto Educativo</p>
+  </footer>
+
+<audio id="bg-music" autoplay loop>
+  <source src="Evanescence - Bring Me to Life.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+<button onclick="toggleMusic()" id="music-btn">⏸️ Música</button>
+
+<style>
+  #music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+</style>
+
+<script>
+  const music = document.getElementById('bg-music');
+  const btn = document.getElementById('music-btn');
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+      btn.textContent = '⏸️ Música';
+    } else {
+      music.pause();
+      btn.textContent = '▶️ Música';
+    }
+  }
+</script>
+
+</body>
+</html>

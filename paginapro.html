@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - SSJ10</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>SUPER SAIYAJIN FASE 10</h1>
+  </header>
+
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="galeria.html">Explorador</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="acerca.html">Acerca de</a>
+</nav>
+
+
+
+  
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="galeria.html">Explorador</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="acerca.html">Acerca de</a>
+</nav>
+
+
+  <main>
+    <aside>
+      <img src="ssj10.jpg" alt="SSJ10" />
+      <p><strong>Nombre completo:</strong> GOKU SUPER SAIYAJIN FASE 10</p>
+      <p><strong>Nivel de poder:</strong> Infinito</p>
+      <p><strong>Visto por última vez:</strong> sin registro</p>
+    </aside>
+
+    <article>
+      <h2>Bienvenido</h2>
+      <p>Explora todo sobre la transformación fanon más poderosa del universo Dragon Ball: el Super Saiyajin Fase 10.</p>
+      
+      <!-- Menú contextual con lupa -->
+      <div class="contextual-menu">
+        <i class="fas fa-search"></i><br />
+        <input type="text" placeholder="Buscar otra cosa..." />
+      </div>
+
+      <!-- Botones de redirección -->
+      <div style="margin-top: 2rem; text-align: center;">
+        <a href="acerca.html"><button style="padding: 10px 20px; margin: 5px;">Acerca de</button></a>
+        <a href="galeria.html"><button style="padding: 10px 20px; margin: 5px;">Galería</button></a>
+        <a href="contacto.html"><button style="padding: 10px 20px; margin: 5px;">Contacto</button></a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 Wiki Fan SSJ10. Todos los derechos reservados.
+  </footer>
+
+<audio id="bg-music" autoplay loop>
+  <source src="Evanescence - Bring Me to Life.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+<button onclick="toggleMusic()" id="music-btn">⏸️ Música</button>
+
+<style>
+  #music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+</style>
+
+<script>
+  const music = document.getElementById('bg-music');
+  const btn = document.getElementById('music-btn');
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+      btn.textContent = '⏸️ Música';
+    } else {
+      music.pause();
+      btn.textContent = '▶️ Música';
+    }
+  }
+</script>
+
+</body>
+</html>

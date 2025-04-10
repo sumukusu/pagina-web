@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - Transformaciones AF</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <img src="fonttitulo.png" alt="Explorador de Transformaciones" style="max-width: 90%; height: auto; margin: 1rem auto; display: block;" />
+  </header>
+
+  
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="galeria.html">Explorador</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="acerca.html">Acerca de</a>
+</nav>
+
+
+
+  <main>
+    <article style="width: 100%;">
+      <h2>Bienvenido</h2>
+      <p>Este sitio está dedicado a explorar las transformaciones alternativas y creadas por fans dentro del universo de <strong>Dragon Ball AF</strong>.</p>
+      <p>Desde teorías hasta diseños únicos, aquí podrás conocer distintas formas que han sido imaginadas por la comunidad como evolución de los guerreros Saiyajin y otros personajes del universo.</p>
+      <img src="todosgokus.jpg" alt="Transformaciones Goku AF" style="width:100%; margin-top: 2rem; border-radius: 10px;" />
+    </article>
+  </main>
+
+  <footer>
+    <div style="margin: 1rem 0;">
+      <a href="acerca.html" class="footer-btn">Acerca de</a> |
+      <a href="galeria.html" class="footer-btn">Galería AF</a> |
+      <a href="contacto.html" class="footer-btn">Contacto</a>
+    </div>
+    <p>&copy; 2025 Transformaciones Dragon Ball AF - Proyecto Educativo</p>
+  </footer>
+
+<audio id="bg-music" autoplay loop>
+  <source src="Evanescence - Bring Me to Life.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+<button onclick="toggleMusic()" id="music-btn">⏸️ Música</button>
+
+<style>
+  #music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+</style>
+
+<script>
+  const music = document.getElementById('bg-music');
+  const btn = document.getElementById('music-btn');
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+      btn.textContent = '⏸️ Música';
+    } else {
+      music.pause();
+      btn.textContent = '▶️ Música';
+    }
+  }
+</script>
+
+</body>
+</html>
